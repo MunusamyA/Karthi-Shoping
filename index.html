@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background-color: #e3e4d6; */
+            font-family: Arial, sans-serif;
+            /* position: relative; */
+            
+        }
+        .header-start{
+            display: flex;
+            justify-content: start;
+            width: 40%;
+        }
+        .header-end{
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            /* background-color: #f3ebeb; */
+            /* position: sticky; */
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0px 2px 5px #0000001a;
+        }
+       
+        nav a{
+            padding: 10px 15px;
+            text-decoration: none;
+            color:black;
+            font-size:18px;
+            transition: all 0.3s ease-in-out;
+            /* margin: 0 15px; */
+        }
+        nav a:hover{
+            color: #4b4b49;
+            font-size: 16px;
+            text-decoration: underline;
+            border-radius: 31px;
+            cursor: pointer;
+            background-color: #d5e9e2;
+            transition: all 0.1s ease-in-out;
+        }
+
+        nav a button:hover{
+            color: #4b4b49;
+            font-size: 16px;
+            text-decoration: underline;
+            border-radius: 31px;
+            cursor: pointer;
+            background-color: #d5e9e2;
+            transition: all 0.1s ease-in-out;
+        }
+        
+        nav button a {
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        nav button{
+            background-color: #c2d4d4;
+            border: none;
+            color: black;
+            border-radius: 31px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        footer {
+            width: 100%;
+            bottom:0;
+            /* position: fixed; */
+            /* background-color: #f3ebeb; */
+            padding: 20px;
+            box-shadow: 0px 2px 5px #0000001a;
+            
+        }
+        article{
+            margin: 100px 30px;
+            border: 0px solid #f3ebeb;
+            padding: 0px 0px;
+        }
+
+
+        /* .products{
+            padding: 100px 100px;
+            display: flex;
+            width: 400px;
+        }
+        .items{
+            padding-left: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        .items img{
+            width: 200px;
+            height: 200px;
+            border: 1px solid rgb(247, 247, 206);
+            padding: 1px;
+        } */
+        .products {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px; /* Adds spacing between items */
+            justify-content: center;
+        }
+        .items {
+            text-align: center; /* Centers the text */
+            position: relative;
+            /* overflow: hidden; */
+        }
+        .items img {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #f7f7ce;
+            padding: 5px;
+        }
+        .discount {
+            position: absolute;
+            top: 6px;
+            left: 23px;
+            background-color: red;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding:5px;
+            border-radius:0px 0px 5px;
+            /* z-index: 1; */
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-start">
+
+        </div>
+        <div class="header-end">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+                <a href="#">Sign Up</a>
+                <a href="login.html">
+                    <button>Login</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <section >
+        <div class="products">
+        <div class="items">
+            <div class="discount">50% OFF</div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+        <div class="items">
+            <div class="cls_header"></div>
+            <img src="loginbackroundimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> <div class="items">
+            <img src="loginsideimage.jpg" alt="">
+        </div> 
+    </div>
+    </section>
+    <!-- <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, magnam illum explicabo sit similique labore quibusdam, quisquam corrupti dolorem, quae ex reprehenderit exercitationem eveniet voluptas minima assumenda quaerat vero sint.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, magnam illum explicabo sit similique labore quibusdam, quisquam corrupti dolorem, quae ex reprehenderit exercitationem eveniet voluptas minima assumenda quaerat vero sint.</p>
+    </article> -->
+    <footer>
+        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+    </footer>
+<div>
+    
+</div>
+
+</body>
+</html>
